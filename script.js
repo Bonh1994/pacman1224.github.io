@@ -277,12 +277,12 @@ function drawGhosts() {
 function drawLives() {
     ctx.fillStyle = 'black';
     ctx.font = '14px Arial';
-    ctx.fillText(`Score: ${score}`, 10, 20); // Muestra el puntaje en texto
+    ctx.fillText(`Score: ${score}`, 10, 10); // Muestra el puntaje en texto
 
-    ctx.fillText(`Lives:`, 10, 35); // Etiqueta para vidas
+    ctx.fillText(`Lives:`, 10, 25); // Etiqueta para vidas
     ctx.font = '14px Arial';
     for (let i = 0; i < lives; i++) {
-        ctx.drawImage(pacmanIconImg, 50 + i * (livesImgSize + 10), 25, livesImgSize, livesImgSize); // Dibuja los iconos de Pac-Man
+        ctx.drawImage(pacmanIconImg, 50 + i * (livesImgSize + 5), 13, livesImgSize, livesImgSize); // Dibuja los iconos de Pac-Man
     }
 }
 
