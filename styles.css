@@ -259,7 +259,7 @@ canvas {
   color: rgb(225, 246, 1);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (max-width: 769px){
   #logo-image {
     width: 25%;
   }
