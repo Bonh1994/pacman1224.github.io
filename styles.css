@@ -267,6 +267,7 @@ canvas {
   }
   #logo-image {
     width: 25%;
+    right: 5% ;
   }
 
   #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
@@ -274,7 +275,7 @@ canvas {
   }
 
   #logo-text, #logo-text1, #logo-text2, #logo-text22, #logo-text3, #logo-text4, #logo-text5, #logo-text6, #logo-text7, #logo-text8, #logo-text9, #logo-text10, #logo-text11, #logo-text12, #logo-text13, #logo-text14 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
