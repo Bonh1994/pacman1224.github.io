@@ -1,0 +1,302 @@
+/* Estilo base */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+canvas {
+  display: block; /* Elimina el espacio debajo del canvas */
+  width: 100%; /* 100% del ancho de la ventana */
+  height: 100%; /* 100% de la altura de la ventana */
+}
+#controls {
+  position: fixed;
+  bottom: 20px;
+  right: 350px;
+  display: grid;
+  grid-template-areas:
+      ". up ."
+      "left down right";
+  gap: 10px;
+  border: 1px solid black;
+  z-index: 1; /* Canvas detrás de los botones */
+  position: absolute; /* Necesario para que el canvas pueda ser correctamente posicionado en la página */
+}
+
+#controls button {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#controls button:hover {
+  background-color: #555;
+}
+
+#up {
+  grid-area: up;
+
+
+}
+
+#down {
+  grid-area: down;
+}
+
+#left {
+  grid-area: left;
+}
+
+#right {
+  grid-area: right;
+}
+
+
+#game-container {
+  position: relative;
+  width: 100%; /* Asegúrate de que se ajuste al ancho de la ventana */
+  height: 100%; /* Asegúrate de que se ajuste a la altura de la ventana */
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+
+#gameCanvas {
+  width: 100%;
+  height: 100%;
+  background-color: #4a4949;
+}
+
+/* Imágenes */
+#logo-image, #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
+  position: absolute;
+  width: 5%; /* Ajusta el tamaño relativo de las imágenes */
+  height: auto;
+}
+
+/* Ajustes específicos para cada imagen */
+#logo-image {
+  top: 5%;
+  right: 7%;
+  width: 20%;
+  max-width: 300px;
+}
+
+#logo-image1 {
+  top: 30%;
+  right: 15%;
+  width:3%
+}
+
+#logo-image2 {
+  top: 40%;
+  right: 20%;
+  width:5%
+}
+
+#logo-image3 {
+  top: 50%;
+  right: 24%;
+  width:2.5%
+}
+
+#logo-image4 {
+  top: 60%;
+  right: 23%;
+  width:3.5%
+}
+
+#logo-image5 {
+  top: 70%;
+  right: 14%;
+  width:2.5%
+}
+
+#logo-image6 {
+  top: 80%;
+  right: 18%;
+  width:5%
+}
+
+#logo-image7 {
+  top: 91%;
+  right: 15%;
+  width:3%
+}
+
+/* Texto */
+#logo-text, #logo-text1, #logo-text2, #logo-text22, #logo-text3, #logo-text4, #logo-text5, #logo-text6, #logo-text7, #logo-text8, #logo-text9, #logo-text10, #logo-text11, #logo-text12, #logo-text13, #logo-text14 {
+  position: absolute;
+  color: white;
+  opacity: 1;
+  font-size: 1rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Ajusta el texto según la posición */
+#logo-text {
+  top: 18%;
+  right: 5%;
+  font-size: 100%;
+}
+
+#logo-text1 {
+  top: 24%;
+  right: 5%;
+  font-size: 90%;
+
+}
+
+#logo-text2 {
+  top: 30%;
+  right: 5%;
+  font-size: 80%;
+  
+}
+
+#logo-text22 {
+  top: 33%;
+  right: 5%;
+  font-size: 80%;
+  color: rgb(225, 246, 1);
+}
+
+#logo-text3 {
+  top: 40%;
+  right: 5%;
+  font-size: 80%;
+}
+
+#logo-text4 {
+  top: 43%;
+  right: 5%;
+  font-size: 80%;
+  color: rgb(225, 246, 1);
+}
+
+#logo-text5 {
+  top: 50%;
+  right: 5%;
+  font-size: 80%;
+}
+
+#logo-text6 {
+  top: 53%;
+  right: 5%;
+  font-size: 80%;
+  color: rgb(225, 246, 1);
+}
+
+#logo-text7 {
+  top: 60%;
+  right: 5%;
+  font-size: 80%;
+}
+
+#logo-text8 {
+  top: 63%;
+  right: 5%;
+  font-size: 80%;
+  color: rgb(225, 246, 1);
+}
+
+#logo-text9 {
+  top: 70%;
+  right: 5%;
+  font-size: 80%;
+}
+
+#logo-text10 {
+  top: 73%;
+  right: 5%;
+  font-size: 80%;
+  color: rgb(225, 246, 1);
+}
+
+#logo-text11 {
+  top: 80%;
+  right: 5%;
+  font-size: 80%;
+}
+
+#logo-text12 {
+  top: 83%;
+  right: 5%;
+  font-size: 80%;
+  color: rgb(225, 246, 1);
+}
+
+#logo-text13 {
+  top: 90%;
+  right: 5%;
+  font-size: 80%;
+}
+
+#logo-text14 {
+  top: 93%;
+  right: 5%;
+  font-size: 80%;
+  color: rgb(225, 246, 1);
+}
+
+@media (max-width: 1024px) {
+  #logo-image {
+    width: 25%;
+  }
+
+  #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
+    width: 10%;
+  }
+
+  #logo-text, #logo-text1, #logo-text2, #logo-text22, #logo-text3, #logo-text4, #logo-text5, #logo-text6, #logo-text7, #logo-text8, #logo-text9, #logo-text10, #logo-text11, #logo-text12, #logo-text13, #logo-text14 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #logo-image {
+    width: 35%;
+  }
+
+  #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
+    width: 18%;
+  }
+
+  #logo-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #logo-image {
+    width: 45%;
+  }
+
+  #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
+    width: 20%;
+  }
+
+  #logo-text {
+    font-size: 0.7rem;
+  }
+}
