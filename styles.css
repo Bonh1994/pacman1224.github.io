@@ -315,3 +315,24 @@ canvas {
     font-size: 0.1rem;
   }
 }
+@media (min-width: 1920px) {
+  #logo-image {
+    width: 17%;
+    right: 5%;
+  }
+  
+
+  #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
+    width: 3%; /* ojo*/
+    right: 18%;
+  }
+
+  #logo-text {
+    font-size: 0.9rem; /* ojo*/
+  }
+  #logo-text, #logo-text1, #logo-text2, #logo-text22, #logo-text3, #logo-text4, #logo-text5, #logo-text6, #logo-text7, #logo-text8, #logo-text9, #logo-text10, #logo-text11, #logo-text12, #logo-text13, #logo-text14 {
+    font-size: 0.9rem; /* ojo*/
+    right: 2.5%;
+
+  }
+}
