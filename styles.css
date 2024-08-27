@@ -19,12 +19,12 @@ canvas {
 #controls {
   position: fixed;
   bottom: 20px;
-  right: 350px;
+  right: 25%;
   display: grid;
   grid-template-areas:
       ". up ."
       "left down right";
-  gap: 10px;
+  gap: 0.2px;
   border: 1px solid black;
   z-index: 1; /* Canvas detrás de los botones */
   position: absolute; /* Necesario para que el canvas pueda ser correctamente posicionado en la página */
@@ -38,6 +38,7 @@ canvas {
   border: none;
   border-radius: 5px;
   font-size: 20px;
+
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -260,6 +261,10 @@ canvas {
 }
 
 @media (max-width: 1024px) and (max-width: 769px){
+
+  #controls button {
+    transform: scale(0.7);
+  }
   #logo-image {
     width: 25%;
   }
@@ -279,6 +284,7 @@ canvas {
     width: 17%;
     right: 5%;
   }
+  
 
   #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
     width: 3%; /* ojo*/
