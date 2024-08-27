@@ -88,7 +88,7 @@ canvas {
 /* Imágenes */
 #logo-image, #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
   position: absolute;
-  width: 3%; /* Ajusta el tamaño relativo de las imágenes */
+  width: 5%; /* Ajusta el tamaño relativo de las imágenes */
   height: auto;
 }
 
@@ -275,28 +275,35 @@ canvas {
 
 @media (max-width: 768px) {
   #logo-image {
-    width: 35%;
+    width: 17%;
+    right: 5%;
   }
 
   #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
-    width: 18%;
+    width: 3%; /* ojo*/
+    right: 21%;
   }
 
   #logo-text {
-    font-size: 0.8rem;
+    font-size: 0.3rem; /* ojo*/
+
   }
+}
+#logo-text, #logo-text1, #logo-text2, #logo-text22, #logo-text3, #logo-text4, #logo-text5, #logo-text6, #logo-text7, #logo-text8, #logo-text9, #logo-text10, #logo-text11, #logo-text12, #logo-text13, #logo-text14 {
+  font-size: 0.4rem; /* ojo*/
+  right: 2.5%;
 }
 
 @media (max-width: 480px) {
   #logo-image {
-    width: 45%;
+    width: 10%;
   }
 
   #logo-image1, #logo-image2, #logo-image3, #logo-image4, #logo-image5, #logo-image6, #logo-image7 {
-    width: 20%;
+    width: 1%;
   }
 
   #logo-text {
-    font-size: 0.7rem;
+    font-size: 0.1rem;
   }
 }
